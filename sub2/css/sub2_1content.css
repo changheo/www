@@ -1,0 +1,222 @@
+/* 스토리웨이 편의점 내용 영역 */
+@keyframes train{
+	from{
+	    transform: translateX(0px);
+	}
+	
+	to{
+        transform: translateX(-125px);
+	}
+}
+
+#content .content_area .back{
+    position: fixed;    
+    right:0;
+    bottom:200px;
+    z-index: -1;
+}
+#content .content_area .point_text{
+    font-size: 1.125em;
+    color:#ea5b0c;
+}
+
+/* 스토리웨이 편의점 소개 영역 */
+
+#content .content_area .content_top{
+    overflow: hidden;
+    position: relative;
+    margin-bottom:150px;
+}
+#content .content_area .content_top img:nth-child(1){
+    width: 600px;
+    box-shadow: 2px 2px 5px 2px #999;
+    float: left;
+}
+#content .content_area .content_top img:nth-child(2){
+    width:45px;
+    margin:0 20px 0 50px;
+    float: left;
+
+}
+#content .content_area .content_top h3{
+    font-size: 2.5em;
+    margin-bottom:30px;
+    float: left;
+}
+#content .content_area .content_top .train{
+    position: absolute;
+    right:30px;
+    top:114px;
+
+    animation-name:train;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+
+}
+
+#content .content_area .content_top dl{
+    width: 540px;
+    float: left;
+    text-align: justify;
+    line-height: 2em;
+    margin:10px 0 0 50px;
+}
+#content .content_area .content_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin:40px 0 50px 0;
+    font-size: 1.25em;
+    position: relative;
+}
+#content .content_area .content_top dt .point_text{
+    font-size: 22px;
+}
+#content .content_area .content_top dt::before{
+    content:'';
+    width: 165px;
+    height: 3px;
+    background-color: #ea5b0c;
+    right:25px;
+    top: -5px;
+    position: absolute;
+}
+#content .content_area .content_top dd{
+    margin-bottom:50px;
+}
+
+/* 스토리웨이 편의점 운영자 모집 영역 */
+
+#content .content_area .content_middel{
+    margin-bottom:150px;
+}
+#content .content_area .content_middel h3{
+    font-size: 2.5em;
+    margin-bottom:70px;
+}
+#content .content_area .content_middel img{
+    width: 45px;
+    margin:0 15px;
+    float: left;
+}
+#content .content_area .content_middel p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25em;
+    text-align: left;
+    margin-bottom:50px;
+    margin-left:20px;
+    position: relative;
+}
+#content .content_area .content_middel p .point_text{
+    font-size: 22px;
+}
+#content .content_area .content_middel p::before{
+    content:'';
+    width: 3px;
+    height: 15px;
+    background-color: #ea5b0c;
+    left:-10px;
+    top: 6px;
+    position: absolute;
+}
+#content .content_area .content_middel ul span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    font-size: 50px;
+    z-index: 10;
+}
+#content .content_area .content_middel ul{
+    margin-left:15px;
+    overflow: hidden;
+}
+
+#content .content_area .content_middel li{
+    text-align: center;
+    float: left;
+    margin:30px;
+    position: relative;
+}
+#content .content_area .content_middel li:hover dl{
+    border:1px solid #ea5b0c;
+}
+#content .content_area .content_middel li dl::before{
+    content:url(../images/content1/label.png);
+    right: -5px;
+    top:-5px;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+#content .content_area .content_middel li:hover dl::before{
+    opacity: 1;
+}
+#content .content_area .content_middel dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    margin:100px 0 30px 0;
+}
+#content .content_area .content_middel li span{
+    display: block;
+    color:#333;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top:30px;
+    margin-left: -50px;
+    font-size: 50px;
+    transition: all .5s ease;
+}
+#content .content_area .content_middel li:hover span{
+    color:#ea5b0c;
+}
+#content .content_area .content_middel dl{
+    background: #f9f9f9;
+    border:1px solid #fff;
+    padding:30px;
+    position: relative;
+    transition: all .5s ease;
+}
+
+#content .content_area .content_middel dd{
+    
+}
+
+/* 스토리웨이 특징 영역 */
+#content .content_area .content_bottom{
+    margin-bottom:150px;
+}
+#content .content_area .content_bottom img{
+    width: 45px;
+    margin:0 15px;
+    float: left;
+}
+#content .content_area .content_bottom h3{
+    font-size: 2.5em;
+    margin:2px 0 70px 0;
+    float: left;
+}
+#content .content_area .content_bottom dl{
+    clear: both;
+}
+#content .content_area .content_bottom dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25em;
+    margin-left:20px;
+    margin-bottom:30px;
+    position: relative;
+}
+#content .content_area .content_bottom dt::after{
+    content:'';
+    width: 3px;
+    height: 15px;
+    background-color: #ea5b0c;
+    left:-7px;
+    top: 5px;
+    position: absolute;
+}
+#content .content_area .content_bottom dd{
+    margin-bottom:60px;
+    margin-left:20px;
+}

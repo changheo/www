@@ -1,0 +1,21 @@
+
+/* 비주얼 */
+
+.main{
+    margin-top: 96px;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: url(/mobile/sub4/common/images/visual.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main h3{
+    color:#fff;
+    font-size: 1.714285em;
+    position: absolute;
+    left:50%;
+    margin-left:-45px;
+    top:50%;
+    margin-top:-14px;
+}

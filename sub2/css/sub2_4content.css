@@ -1,0 +1,147 @@
+/* 카페 스토리웨이 영역 */
+/* 스크롤이벤트 css */
+#content .content_area>div:first-child{
+    position: relative;
+    right: -20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+#content .storyway_bottom li:nth-child(odd){
+    position: relative;
+    right: 20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+#content .storyway_bottom li:nth-child(even){
+    position: relative;
+    right: -20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+
+#content .content_area div.boxMove {
+    right: 0;
+    opacity: 1;
+}
+#content .storyway_bottom li.boxMove {
+    right: 0;
+    opacity: 1;
+}
+#content .content_area h3{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom:50px;
+}
+#content .content_area .storyway_top{
+    margin-bottom:300px;
+}
+#content .content_area p{
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.125em;
+    text-align: center;
+    margin-bottom:130px;
+    margin-top:150px;
+    position: relative;
+}
+#content .content_area .point_color{
+    color:#255aa6;
+    font-weight: 700;
+}
+#content .content_area p::before{
+    content: '';
+    width: 2px;
+    height: 50px;
+    background: #255aa6;
+    position: absolute;
+    left:50%;
+    top:-100px;
+    margin-left:-1px;
+}
+#content .content_area .storyway_top ul{
+    text-align: center;
+    position: relative;
+}
+#content .content_area .storyway_top li{
+    margin:0 auto;
+    width: 1100px;
+    background: rgba(242,242,242,.9);
+    border:1px solid #ccc;
+    position: absolute;
+    left:50%;
+    margin-left:-550px;
+    bottom:-150px;
+    overflow: hidden;
+}
+#content .content_area .storyway_top dl{
+    width: 300px;
+    margin:10px 10px 40px 45px;
+    float: left;
+}
+#content .content_area .storyway_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.5em;
+    margin:30px 0 30px 0;
+}
+#content .content_area .storyway_top dd{
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+#content .content_area .storyway_bottom{
+    margin-bottom:150px;
+}
+#content .content_area .storyway_bottom li{
+    overflow: hidden;
+    background: #f9f9f9;
+    text-align: center;
+}
+#content .content_area .storyway_bottom dl{
+    margin:0 50px;
+}
+#content .content_area .storyway_bottom dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.5em;
+    margin-bottom:100px;
+    margin-top:80px;
+}
+#content .content_area .storyway_bottom dd{
+    line-height: 2em;
+    text-align: justify;
+}
+#content .content_area .storyway_bottom li:nth-child(1) img{
+    box-shadow: 2px 2px 5px 2px #ccc;
+    float: left;
+}
+#content .content_area .storyway_bottom li:nth-child(1) dl{
+    width: 500px;
+    float: left;
+}
+#content .content_area .storyway_bottom li:nth-child(2) img{
+    box-shadow: -2px 2px 5px 2px #ccc;
+    float: right;
+}
+#content .content_area .storyway_bottom li:nth-child(2) dl{
+    width: 500px;
+    float: right;
+}
+#content .content_area .storyway_bottom li:nth-child(3) img{
+    box-shadow: 2px 2px 5px 2px #ccc;
+    float: left;
+}
+#content .content_area .storyway_bottom li:nth-child(3) dl{
+    width: 500px;
+    float: left;
+}
+#content .content_area .storyway_bottom li:nth-child(4) img{
+    box-shadow: -2px 2px 5px 2px #ccc;
+    float: right;
+}
+#content .content_area .storyway_bottom li:nth-child(4) dl{
+    width: 500px;
+    float: right;
+}

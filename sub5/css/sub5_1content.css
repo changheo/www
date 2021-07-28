@@ -1,0 +1,78 @@
+/* 자주묻는질문영역 */
+.content_area {
+    margin-top:300px;
+    margin-bottom:150px;
+    width: 1200px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.content_area .show .q{
+    background: rgba(37,90,166,.3);
+    color:#fff;
+}
+.content_area .hide .q{
+    background: #fafafa;
+    color:#333;
+}
+
+.content_area .all {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.content_area .q {
+    margin: 0;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.content_area .q a.trigger {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    display: block;
+    padding: 50px 15px;
+    /* background: #fafafa; */
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+    padding-left:50px;
+}
+
+
+.content_area li:hover .q{
+    background: rgba(37,90,166,.3);
+}
+.content_area .q a.trigger:hover,
+.content_area .q a.trigger:active,
+.content_area .q a.trigger:focus {
+    /* background: #255aa6; */
+    color: #333;
+}
+
+.content_area .q span {
+    color:#333;
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.content_area .a {
+    color:#333;
+    margin: 0;
+    text-align: justify;
+    padding: 10px 15px;
+    line-height: 2em;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px;
+    display: none;
+}

@@ -1,0 +1,156 @@
+/* 공통태그 */
+
+
+/* 소개 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* 인재상 영역 */
+@keyframes ani{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#content .content_area{
+}
+
+#content .content_area ul:nth-child(1){
+    margin:0 auto 50px;
+    padding:30px 0;
+    height: 300px;
+    text-transform: capitalize;
+    overflow: hidden;
+    background: rgba(242,242,242,.7);
+}
+#content .content_area ul:nth-child(1) li {
+    font-family: 'arial', sans-serif;
+    font-size: 1.14286em;
+    font-weight: 700;
+    width: 100px;
+    height: 60px;
+    padding-top:40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    font-weight: 700;
+    position: relative;
+
+}
+
+#content .content_area ul:nth-child(1) li:nth-of-type(1) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 5px solid rgba(37,90,166,.3);
+}
+
+#content .content_area ul:nth-child(1) li:nth-of-type(2) {
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+#content .content_area ul:nth-child(1) li:nth-of-type(2)::after{
+    content: '';
+    position: absolute;
+    left:50%;
+    margin-left:-105px;
+    top:50%;
+    margin-top:-100px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px dashed rgba(255,81,81.1);
+    z-index: -1;
+
+    animation-name:ani;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+#content .content_area ul:nth-child(1) li:nth-last-of-type(2) {
+    float: right;
+    position: absolute;
+    right: 50%;
+    margin-right: -150px;
+    margin-top:-25px;
+    border: 5px solid rgba(37,90,166,.6);
+}
+
+
+#content .content_area ul:nth-child(1) li:nth-last-of-type(1) {
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top:-25px;
+    border: 5px solid rgba(37,90,166,.9);
+}
+
+
+
+
+/* 인재상 하단 */
+
+#content .content_area ul:nth-child(2){
+    margin-bottom:50px;
+}
+
+
+#content .content_area ul:nth-child(2) li{
+
+}
+#content .content_area ul:nth-child(2) dl{
+    width: 90%;
+    margin:30px auto 0;
+    overflow: hidden;
+    border: 3px solid rgba(37,90,166,.3);;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#content .content_area ul:nth-child(2) dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding:20px 0;
+    text-align: center;
+    color:#fff;
+    background: rgba(37,90,166,.3);
+    border-bottom: 1px solid #fff;
+    /* border-radius: 10px; */
+
+    width: 100%;
+}
+#content .content_area ul:nth-child(2) li:nth-child(1) dl{
+    border: 3px solid rgba(37,90,166,.3);
+}
+#content .content_area ul:nth-child(2) li:nth-child(2) dl{
+    border: 3px solid rgba(37,90,166,.6);
+}
+#content .content_area ul:nth-child(2) li:nth-child(3) dl{
+    border: 3px solid rgba(37,90,166,.9);
+}
+#content .content_area ul:nth-child(2) li:nth-child(1) dt{
+    background: rgba(37,90,166,.3);
+}
+#content .content_area ul:nth-child(2) li:nth-child(2) dt{
+    background: rgba(37,90,166,.6);
+}
+#content .content_area ul:nth-child(2) li:nth-child(3) dt{
+    background: rgba(37,90,166,.9);
+}
+#content .content_area ul:nth-child(2) dd{
+    width: 90%;
+    line-height: 1.5em;
+    text-align: center;
+    padding:0 5%;
+    margin:10px 0;
+}

@@ -1,0 +1,85 @@
+/* 공통태그 */
+
+
+/* 소개 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* 자주묻는 질문 영역 */
+.content_area {
+    margin-top:100px;
+    margin-bottom:50px;
+    width: 90%;
+    border-bottom: 1px solid #ddd;
+    margin:0 5% 50px;
+    position: relative;
+}
+.content_area .show .q{
+    background: rgba(37,90,166,.3);
+    color:#fff;
+}
+.content_area .hide .q{
+    background: #fafafa;
+    color:#333;
+}
+
+.content_area .all {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.content_area .q {
+    margin: 0;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.content_area .q a.trigger {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.14286em;
+    display: block;
+    padding: 20px 70px 20px 30px;
+    line-height: 1.5em;
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+.content_area .q a.trigger:hover,
+.content_area .q a.trigger:active,
+.content_area .q a.trigger:focus {
+    color: #333;
+}
+
+.content_area .q span {
+    color:#333;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.content_area .a {
+    color:#333;
+    margin: 0;
+    text-align: justify;
+    padding: 10px 15px;
+    line-height: 2em;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    display: none;
+}

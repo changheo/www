@@ -1,0 +1,294 @@
+/* CSS Document */
+
+@keyframes imgAnimation {
+    from {
+        transform: scale(1.1);
+        opacity: .8
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        transform: scale(1);
+        opacity: .8
+    }
+}
+
+/* 공통 h태그 */
+#content h3 {
+    font-size: 1.714285em;
+}
+
+/* 포인트텍스트 */
+.point_text {
+    font-size: 1.39958em;
+    font-weight: 700;
+}
+
+/* 비주얼영역 */
+.main {
+    margin-top:96px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+}
+
+.main img {
+    width: 100%;
+    animation-name: imgAnimation;
+    animation-duration: 5.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: .8;
+}
+
+.main li {
+    position: relative;
+}
+
+.main li p {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 40%;
+    font-size: 1.42857em;
+}
+
+.main .link1,
+.main .link2,
+.main .link3,
+.main .link4,
+.main .link5 {
+    display: none;
+}
+
+.dock {
+    width: 138px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 90%;
+}
+
+.dock span.mbutton {
+    margin-right: 15px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: #255aa6;
+    border-radius: 8px;
+    transition: all .5s
+}
+
+
+/* 사업소개영역 */
+
+.business {
+    margin-bottom: 50px;
+}
+
+.business h3 {
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.business h3::before {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+
+.business ul{
+    width: 400%;
+    position: relative;
+    overflow: hidden;
+
+    transition: all .5s;
+}
+.business li {
+    width: 25%;
+    float: left;
+    position: relative;
+    
+}
+
+.business li p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    color:#fff;
+    font-size: 1.42857em;
+    position: absolute;
+    left:50%;
+    top:29%;
+}
+.business li:nth-child(1) p{
+    margin-left:-75px;
+}
+.business li:nth-child(2) p{
+    margin-left:-50px;
+}
+.business li:nth-child(3) p{
+    margin-left:-69px;
+}
+.business li:nth-child(4) p{
+    margin-left:-40px;
+}
+
+.business li img {
+    width: 100%;
+}
+
+
+
+/* 파트너십영역 */
+.partnership h3 {
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.partnership h3::before {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+.partnership {
+    margin-bottom: 50px;
+}
+
+.partnership li {
+    height: 150px;
+    overflow: hidden;
+}
+
+.partnership li:nth-child(1) {
+    background: url(/mobile/images/subway.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.partnership li:nth-child(2) {
+    background: url(/mobile/images/youth.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.partnership li:nth-child(3) {
+    background: url(/mobile/images/shop.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.partnership li:nth-child(4) {
+    background: url(/mobile/images/train.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.partnership li dl{
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    overflow: hidden;
+}
+
+.partnership li:nth-child(even) dl {
+    float: left;
+}
+.partnership li:nth-child(odd) dl {
+    float: right;
+}
+
+.partnership li dt{
+    margin: 30px 10%;
+    font-size: 1.14286em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.partnership li dd {
+    margin: 0 8%;
+    text-align: left;
+    line-height: 1.5em;
+}
+.partnership li:nth-child(even) dt{
+    text-align: right;
+}
+.partnership li:nth-child(even) dd{
+    text-align: right;
+}
+
+/* 홍보영상 영역 */
+.advertising{
+    margin-bottom:50px;
+}
+.advertising h3 {
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+.advertising h3::before {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+.advertising video{
+    width: 100%;
+}
+
+/* 인재채용 영역 */
+
+.recruitment{
+    height: 333px;
+    margin-bottom:50px;
+    background: url(/mobile/images/recruitment.jpg) center no-repeat;
+    background-size: cover;
+}
+.recruitment .re_box{
+    height: 333px;
+    background: rgba(255, 255, 255, .6);
+}
+.recruitment .re_box h3{
+    padding:100px 0 30px 0;
+    text-align: center;
+}
+.recruitment .re_box p{
+    text-align: center;
+    margin-bottom:30px;
+    line-height: 1.5em;
+}
+.recruitment .re_box a{
+    display: block;
+    width: 60px;
+    margin:0 auto;
+    border: 1px solid #000;
+    text-align: center;
+    padding:1% 1%;
+}
+.recruitment .re_box span{
+}
+

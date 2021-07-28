@@ -1,0 +1,197 @@
+/* 인사봉지제도영역 */
+
+/* 스크롤 이벤트 */
+#content .con_top li:nth-child(odd){
+    position: relative;
+    right: 0;
+    top: -20px;
+    opacity: 0;
+    transition: all .8s;
+}
+#content .con_top li:nth-child(even){
+    position: relative;
+    right: -0;
+    top: 20px;
+    opacity: 0;
+    transition: all .8s;
+}
+#content .con_top li.boxMove2{
+    top: 0;
+    opacity: 1;
+}
+#content .con_bottom li:nth-child(odd){
+    position: relative;
+    right: 20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+#content .con_bottom li:nth-child(even){
+    position: relative;
+    right: -20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+
+#content .con_bottom li.boxMove {
+    right: 0;
+    opacity: 1;
+}
+/* 스크롤 끝 */
+
+#content .content_area h3{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom:100px;
+}
+
+#content .content_area .con_top{
+    margin-bottom:150px;
+}
+#content .content_area .con_top ul{
+    overflow: hidden;
+    height: 700px;
+}
+#content .content_area .con_top li{
+    width: 300px;
+    float: left;
+    position: relative;
+}
+#content .content_area .con_top li::after{
+    content: '';
+    width: 3px;
+    height: 100px;
+    background: #ccc;
+    position: absolute;
+    left:50%;
+    top:220px;
+}
+#content .content_area .con_top li:nth-child(even):after{
+    top:290px;
+}
+#content .content_area .con_top li:nth-child(odd) dl{
+    margin-bottom: 150px;
+}
+#content .content_area .con_top li:nth-child(odd) dt{
+    margin-top:50px;
+}
+#content .content_area .con_top li:nth-child(even) img{
+    margin-bottom: 180px;
+}
+#content .content_area .con_top li img{
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 7px 2px #ccc;
+    border-radius: 50%;
+    margin-left:25px;
+}
+#content .content_area .con_top dl{
+    height: 160px;
+    text-align: center;
+}
+#content .content_area .con_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-bottom:30px;
+}
+#content .content_area .con_top dd{
+    margin:0 auto;
+    width: 270px;
+    line-height: 2em;
+}
+
+
+
+#content .content_area .con_bottom{
+    margin-bottom:150px;
+}
+#content .content_area .con_bottom ul{
+    overflow: hidden;
+} 
+#content .content_area .con_bottom li{
+    clear: both;
+    position: relative;
+}
+#content .content_area .con_bottom li:nth-child(odd)::after{
+    content: '';
+    width: 500px;
+    height: 100px;
+    background: #ea5b0c;
+    position: absolute;
+    left:250px;
+    top:80px;
+    z-index: -1;
+}
+#content .content_area .con_bottom li:nth-child(odd)::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    background: #ea5b0c;
+    position: absolute;
+    left:715px;
+    top:95px;
+    z-index: -1;
+}
+#content .content_area .con_bottom li:nth-child(even)::after{
+    content: '';
+    width: 500px;
+    height: 100px;
+    background: rgba(37,90,166,1);
+    position: absolute;
+    right:250px;
+    top:80px;
+    z-index: -1;
+}
+#content .content_area .con_bottom li:nth-child(even)::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    background: rgba(37,90,166,1);
+    position: absolute;
+    right:715px;
+    top:95px;
+    z-index: -1;
+}
+
+#content .content_area .con_bottom li img{
+    width: 200px;
+    height: 200px;
+    border:30px solid #ea5b0c;
+    border-radius: 50%;
+}
+#content .content_area .con_bottom li:nth-child(odd) img{
+    float: left;
+}
+#content .content_area .con_bottom li:nth-child(even) img{
+    border:30px solid #255aa6;
+    float: right;
+}
+#content .content_area .con_bottom dl{
+
+}
+#content .content_area .con_bottom li:nth-child(odd) dl{
+    position: absolute;
+    left:300px;
+    top:115px;
+}
+#content .content_area .con_bottom li:nth-child(even) dl{
+    text-align: right;
+    position: absolute;
+    right:300px;
+    top:115px;
+}
+#content .content_area .con_bottom dt{
+    color:#fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom:50px;
+}
+#content .content_area .con_bottom dd{
+    line-height: 2em;
+}

@@ -1,0 +1,112 @@
+/* 공통태그 */
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* 카페 스토리웨이 */
+
+#content .content_area h3{
+    text-align: center;
+    font-size: 1.714285em;
+    margin-bottom:30px;
+}
+#content .content_area .storyway_top{
+    margin-bottom:50px;
+}
+#content .content_area .storyway_top>img{
+    width: 100%;
+}
+#content .content_area p{
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    margin-bottom:30px;
+    margin-top:50px;
+    position: relative;
+}
+#content .content_area .point_color{
+    color:#255aa6;
+    font-weight: 700;
+}
+#content .content_area p::before{
+    content: '';
+    width: 2px;
+    height: 30px;
+    background: #255aa6;
+    position: absolute;
+    left:50%;
+    top:-40px;
+    margin-left:-1px;
+}
+#content .content_area .storyway_top ul{
+    text-align: center;
+    position: relative;
+}
+#content .content_area .storyway_top li{
+    margin:0 auto;
+    width: 100%;
+    background: rgba(242,242,242,.9);
+    border:1px solid #ccc;
+    overflow: hidden;
+}
+#content .content_area .storyway_top dl{
+    width: 90%;
+    margin:30px 5%;
+}
+#content .content_area .storyway_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    margin-bottom:30px;
+}
+#content .content_area .storyway_top dd{
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+/* 카페 스토리웨이 바텀 */
+
+#content .content_area .storyway_bottom{
+    margin-bottom:50px;
+}
+#content .content_area .storyway_bottom li{
+    overflow: hidden;
+    background: #f9f9f9;
+    text-align: center;
+}
+#content .content_area .storyway_bottom li img{
+    width: 90%;
+    margin:0 5%;
+}
+#content .content_area .storyway_bottom dl{
+    width: 90%;
+    margin:0 5% 30px;
+}
+#content .content_area .storyway_bottom dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    margin:30px 0;
+}
+#content .content_area .storyway_bottom dd{
+    line-height: 1.5em;
+    text-align: justify;
+}
+/* #content .content_area .storyway_bottom li:nth-child(odd) img{
+    box-shadow: 2px 2px 5px 2px #ccc;
+    float: left;
+}
+#content .content_area .storyway_bottom li:nth-child(even) img{
+    box-shadow: -2px 2px 5px 2px #ccc;
+    float: right;
+}
+#content .content_area .storyway_bottom li:nth-child(odd) dl{
+    float: right;
+}
+#content .content_area .storyway_bottom li:nth-child(eveb) dl{
+    float: right;
+}
+ */
+

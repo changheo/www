@@ -1,0 +1,132 @@
+.scale{
+    color:#fff;
+    padding: 5px 10px;
+    background: #255aa6;
+    border-radius: 5px;
+}
+.content_area{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.content_area .scale_list{
+    float: right;
+    margin-bottom:50px;
+}
+
+.content_area #list_search{
+    width: 700px;
+    float: right;
+    margin-right:80px;
+    margin-bottom:50px;
+}
+.content_area #list_search #list_search1{
+    float: left;
+}
+.content_area #list_search #list_search2{
+    float: left;
+}
+.content_area #list_search #list_search2 input{
+    width: 300px;
+    margin: 0 30px;
+    padding:6px 10px;
+}
+.content_area #list_search #list_search3{
+    float: left;
+}
+.content_area #list_search #list_search3 input{
+    color:#fff;
+    padding: 6px 10px;
+    background: #255aa6;
+    border: 0;
+    border-radius: 5px;
+}
+.content_area #list_total{
+    width: 300px;
+    margin-right:50px;
+    float: right;
+    padding:6px 0;
+    margin-bottom:50px;
+
+}
+
+.content_area #list_content{
+    width: 1200px;
+}
+.content_area #list_content .list_title{
+    width: 1180px;
+    overflow: hidden;
+    background: #255aa6;
+    text-align: center;
+    color:#fff;
+    padding:10px;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #000;
+}
+.content_area #list_content .list_title li{
+    float: left;
+}
+.content_area #list_content .list_title li:nth-of-type(1){
+    width: 80px;
+}
+.content_area #list_content .list_title li:nth-of-type(2){
+    width: 700px;
+}
+.content_area #list_content .list_title li:nth-of-type(3){
+    width: 150px;
+}
+.content_area #list_content .list_title li:nth-of-type(4){
+    width: 150px;
+}
+.content_area #list_content .list_title li:nth-of-type(5){
+    width: 100px;
+}
+.content_area #list_content .list_item{
+    width: 1180px;
+    overflow: hidden;
+    text-align: center;
+    background: #f9f9f9;
+    padding:20px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.content_area #list_content .list_item1{
+    width: 80px;
+    float: left;
+}
+.content_area #list_content .list_item2{
+    width: 700px;
+    float: left;
+}
+.content_area #list_content .list_item3{
+    width: 150px;
+    float: left;
+}
+.content_area #list_content .list_item4{
+    width: 150px;
+    float: left;
+}
+.content_area #list_content .list_item5{
+    width: 100px;
+    float: left;
+}
+
+
+#page_num{
+    margin-top:30px;
+    text-align: center;
+}
+#button{
+    overflow: hidden;
+    margin-bottom:150px;
+}
+#button a{
+    display: block;
+    width: 50px;
+    float: right;
+    text-align: center;
+    padding:5px 10px;
+    background: #255aa6;
+    border-radius: 5px;
+    color:#fff;
+}
+#button a:nth-of-type(2){
+    margin-right:20px;
+}

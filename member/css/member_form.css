@@ -1,0 +1,30 @@
+#content{width: 1000px; margin: 0 auto; margin-top: 50px}
+form{
+      width: 600px;
+      border: 1px solid #255aa6;
+      border-radius: 20px;
+      margin:0 auto 50px;
+      padding:30px 0;
+}
+table{width: 100%; margin: 0 auto; }
+th,td{border: 1px solid #255aa6;  padding: 10px;}
+th{border:0;}
+td{width: 100%; border:0;text-align: center;}
+.firstId{text-align: left; font-size: 1.5em; text-indent: 140px;}
+
+input, select{padding: 5px;font-size: 1.5em; border-bottom: 1px solid #255aa6; border-top: 0; border-left: 0; border-right: 0; outline: 0;}
+table tr:last-child td{text-align: center; padding: 20px 0;}
+input{width: 300px;}
+#hp2,#hp3{
+      width: 90px;
+}
+#content h2{font-size: 2em;text-align: center; margin-bottom:50px;}
+
+.logo{display: block; width: 179px; height: 70px; background: url(../../common/images/logo.jpg); text-indent: -9999px;position: relative;left:50%;top:0;margin:30px 0 30px -89px;}
+td a{font-family: 'Nanum Gothic', sans-serif;color:#fff; background: #255aa6; padding:10px 30px; border-radius: 5px;}
+td a:nth-of-type(2){
+      background: #999;
+}
+.all{font-family: 'Nanum Gothic', sans-serif; font-size:0.875em;display: block;text-align: center;margin:30px; 0}
+span{font-family: 'Nanum Gothic', sans-serif;display: block;margin-top:10px;}
+#email1,#email2{width: 133px;}

@@ -1,0 +1,214 @@
+/* 광고사업 영역 */
+
+/* 스크롤이벤트 css */
+#content .content_area>div:nth-child(odd) {
+    position: relative;
+    right: -20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+#content .content_area>div:nth-child(even) {
+    position: relative;
+    right: 20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+
+#content .content_area>div.boxMove {
+    right: 0;
+    opacity: 1;
+}
+
+
+
+#content .content_area .advertising{
+    position: relative;
+    margin-bottom:200px;
+}
+#content .content_area .advertising img{
+    margin-bottom:50px;
+}
+#content .content_area .advertising dl{
+    width: 800px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 50px;    
+    left:50%;
+    bottom:-40px;
+    margin-left:-450px;
+    position: absolute;
+}
+#content .content_area .advertising dt{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom:30px;
+}
+
+#content .content_area .ad{
+    margin-bottom:150px;
+}
+#content .content_area .ad h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom:70px;
+
+}
+#content .content_area .ad ul{
+    margin-left:25px;
+    overflow: hidden;
+}
+#content .content_area .ad li{
+    width: 280px;
+    text-align: center;
+    float: left; 
+    padding:30px;
+    margin:20px;
+    border:1px solid #ccc;
+    transition: all .5s ease;
+    position: relative;
+}
+#content .content_area .ad li:nth-child(1)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/idea.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+ #content .content_area .ad li:hover:nth-child(1)::after{
+    background: url(../images/content2/idea2.png) no-repeat;
+
+ }
+#content .content_area .ad li:nth-child(2)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/motivation.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+#content .content_area .ad li:hover:nth-child(2)::after{
+    background: url(../images/content2//motivation2.png) no-repeat;
+}#content .content_area .ad li:nth-child(3)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/skill.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+#content .content_area .ad li:hover:nth-child(3)::after{
+    background: url(../images/content2/skill2.png) no-repeat;
+}
+#content .content_area .ad dl{
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+#content .content_area .ad dt{
+    font-size: 1.5em;
+    margin-top:80px;
+    margin-bottom:20px;
+}
+#content .content_area .ad dd{
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+
+/* 제이슨 css */
+#content #operate{
+    margin-bottom:170px;
+}
+#content #operate h3{
+    margin:20px 20px 50px 50px;
+    font-size: 2.5em;
+    position: relative;
+}
+#content #operate h3::after{
+    content: '';
+    width: 1000px;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left:-800px;
+    bottom:-15px;
+}
+#content #operate h3::before{
+    content: '';
+    width: 2000px;
+    height: 500px;
+    background: #f2f2f2;
+    position: absolute;
+    left:50%;
+    bottom:-480px;
+    margin-left:-1000px;
+    z-index: -1;
+}
+#content #operate img{
+    width: 250px;
+    height: 350px;
+}
+#content #operate ul{
+    overflow: hidden;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:130px;
+}
+#content #operate li{
+    width: 250px;
+    float: left;
+    margin:20px;
+    text-align: center;
+    position: relative;
+    transition: all .3s ease-out;
+    overflow: hidden;
+}
+#content #operate li:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px 2px #999;
+}
+#content #operate dl{
+    width: 210px;
+    height: 310px;
+    background: rgba(255,255,255,1);
+    padding:20px;
+    position: absolute;
+    left:0;
+    bottom:-290px;
+    transition:all .3s ease-out;
+}
+#content #operate dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin-bottom:50px;
+    transition: all .3s ease-out;
+}
+#content #operate dd{
+    line-height: 1.5em;
+    text-align: justify;
+}
+#content #operate li:hover dl{
+    bottom:0px;
+    background: rgba(255,255,255,.9);
+}
+#content #operate li:hover dt{
+    font-size: 1.5em;
+    margin-top:50px;
+}
+

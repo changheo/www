@@ -1,0 +1,58 @@
+
+
+#content{font-family: 'Nanum Gothic', sans-serif; width: 600px; margin: 0 auto;}
+#content .logo{display: block; width: 179px; height: 70px; background: url(../../images/logo.jpg); text-indent: -999px; overflow: hidden; margin-top: -30px;     position: relative;
+    left: 50%;
+    top: 0;
+    margin: 30px 0 30px -89px;}
+#content h2{font-size: 30px; text-align: center; color: #333; position: relative;}
+#content #title p{text-align: center;}
+#login_form{
+    margin-top:50px;
+    border:1px solid #255aa6;
+    border-radius: 20px;
+    padding:20px;
+}
+
+#id_input_button fieldset>input{width: 550px; border-radius: 5px; border: none; background: #eaebef; padding: 5px; height: 40px; font-size: 16px; margin-bottom:20px;}
+#hp1{padding:5px 10px; }
+select{margin-bottom:20px;}
+#hp2,#hp3{width: 198px; background: #eaebef;padding:10px; border: 0; border-radius: 5px;}
+#id_input_button fieldset>input:last-of-type{
+    width: 560px;
+    color:#fff;
+    background: #255aa6;
+    cursor: pointer;
+}
+
+#loadtext ul{
+    overflow: hidden;
+}
+#loadtext ul li{
+    width: 250px;
+    margin-bottom:20px;
+}
+#loadtext ul li:nth-of-type(2){
+    float: left;
+}
+#loadtext ul li:nth-of-type(3){
+    float: left;
+}
+#loadtext ul li:nth-of-type(4){
+    float: left;
+}
+#loadtext ul li:nth-of-type(5){
+    float: left;
+}
+#loadtext ul li:nth-of-type(6){
+    width: 400px;
+}
+
+.go{overflow: hidden;}
+.go li{margin-bottom:20px;}
+.go li:nth-of-type(2){width: 400px; float: left;}
+.go li:nth-of-type(3){float: left;}
+.go li a:hover{color:#255aa6;}
+
+#join_button p{width: 400px; float: left;}
+#join_button a:hover{color:#255aa6;}

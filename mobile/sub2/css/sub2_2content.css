@@ -1,0 +1,185 @@
+/* 공통태그 */
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* 소개 */
+#content .content_area .advertising{
+    margin-bottom:50px;
+}
+#content .content_area .advertising img{
+    width: 90%;
+    margin:0 5%;
+}
+#content .content_area .advertising dl{
+    width: 86%;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    line-height: 1.5em;
+    margin:0 5% 5% 5%;
+    padding:2%;
+
+}
+#content .content_area .advertising dt{
+    font-size: 1.14286em;
+    font-weight: 700;
+    margin-bottom:20px;
+}
+
+#content .content_area .ad{
+    margin-bottom:50px;
+}
+#content .content_area .ad h3{
+    font-size: 1.714285em;
+    text-align: center;
+    margin-bottom:30px;
+}
+#content .content_area .ad ul{
+    width: 90%;
+    margin:0 5%;
+    overflow: hidden;
+}
+#content .content_area .ad li{
+    width: 90%;
+    text-align: center;
+    padding:4%;
+    border:1px solid #ccc;
+    position: relative;
+}
+#content .content_area .ad li:nth-child(1)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/idea.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+#content .content_area .ad li:nth-child(2)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/motivation.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+#content .content_area .ad li:nth-child(2){
+    border-bottom: 0;
+    border-top: 0;
+}
+#content .content_area .ad li:nth-child(3)::after{
+    content:'';
+    display: block;
+    background: url(../images/content2/skill.png) no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:50%;
+    top:30px;
+    margin-left:-25px;
+    transition: all .5s ease;
+}
+#content .content_area .ad dl{
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+#content .content_area .ad dt{
+    font-size: 1.5em;
+    margin-top:80px;
+    margin-bottom:20px;
+}
+#content .content_area .ad dd{
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+#content .operate{
+    margin-bottom:50px;
+}
+#content .operate h3{
+    font-size: 1.714285em;
+    margin-bottom:30px;
+    margin-left:30px;
+    position: relative;
+}
+#content .operate h3::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left:-70px;
+    bottom:10px;
+}
+#content .operate img{
+    width: 100%;
+}
+#content .operate ul{
+    overflow: hidden;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:50px;
+}
+#content .operate li{
+    width: 48%;
+    float: left;
+    margin-bottom:30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#content .operate li:nth-child(even){
+    margin-left:4%;
+}
+#content .operate p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    margin-top:50%;
+    padding:20px 0;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background: rgba(0,0,0,.7);
+} 
+
+/* 모달 */
+#modal_box{width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0,0,0,.7); display: none; z-index: 10}
+.modal_inner{position:relative}
+.modal_inner div{border: 5px solid #255aa6; width: 80%; margin:5%; padding:2%; position: fixed; left: 0; top: 5%;  display: none; z-index: 20; background:#fff}
+.modal_inner img{width: 70%; margin:0 15%;}
+.modal_inner a{display: block; width: 44px; height: 33px; padding-top:11px;border-radius: 10px; background: #255aa6;font-size: 20px;transition: all .5s;font-weight: bold; text-align: center; color: #fff; position: absolute; right: -3%; top: -3%; z-index: 30}
+
+
+
+.modal_inner dl{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    background: rgba(255,255,255,1);
+    padding:5%;
+    transition:all .3s ease-out;
+}
+.modal_inner dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.14286em;
+    margin-bottom:20px;
+}
+.modal_inner dd{
+    line-height: 1.5em;
+}
+

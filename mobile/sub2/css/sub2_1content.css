@@ -1,0 +1,219 @@
+/* 공통태그 */
+
+
+/* 소개 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* 스토리웨이 편의점 내용 영역 */
+@keyframes train{
+	from{
+	    transform: translateX(0);
+	}
+	
+	to{
+        transform: translateX(-200px);
+	}
+}
+
+#content .content_area .back{
+    position: fixed;    
+    right:0;
+    bottom:300px;
+    z-index: -1;
+}
+#content .content_area .point_text{
+    color:#ea5b0c;
+}
+
+/* 스토리웨이 편의점 소개 영역 */
+
+#content .content_area .content_top{
+    overflow: hidden;
+    position: relative;
+    margin-bottom:30px;
+}
+#content .content_area .content_top img:nth-child(1){
+    width: 90%;
+    margin:15px 5% 0;
+    box-shadow: 2px 2px 5px 2px #999;
+    margin-bottom:30px;
+}
+#content .content_area .content_top img:nth-child(2){
+    width:30px;
+    margin:0 20px 0 5%;
+    float: left;
+}
+#content .content_area .content_top h3{
+    font-size: 1.714285em;
+    margin-bottom:30px;
+    float: left;
+}
+#content .content_area .content_top .train{
+    position: absolute;
+    right:5%;
+    top:0;
+
+    animation-name:train;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+
+}
+
+#content .content_area .content_top dl{
+    clear: both;
+    width: 90%;
+    text-align: justify;
+    line-height: 1.5em;
+    margin:0 5%;
+}
+#content .content_area .content_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin:40px 0 20px 0;
+    position: relative;
+}
+#content .content_area .content_top dd{
+    margin-bottom:20px;
+}
+
+/* 스토리웨이 편의점 운영자 모집 영역 */
+
+#content .content_area .content_middel{
+    margin-bottom:50px;
+}
+#content .content_area .content_middel h3{
+    font-size: 1.714285em;
+    margin-bottom:30px;
+}
+#content .content_area .content_middel img{
+    width:30px;
+    margin:0 20px 0 5%;
+    float: left;
+}
+#content .content_area .content_middel p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    text-align: left;
+    line-height: 1.5em;
+    margin-bottom:30px;
+    margin-left:5%;
+    position: relative;
+}
+#content .content_area .content_middel p .point_text{
+    line-height: 1.5em;
+}
+#content .content_area .content_middel p::before{
+    content:'';
+    width: 3px;
+    height: 15px;
+    background-color: #ea5b0c;
+    left:-7px;
+    top: 2px;
+    position: absolute;
+
+    
+}
+#content .content_area .content_middel ul span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    font-size: 50px;
+    z-index: 10;
+}
+#content .content_area .content_middel ul{
+    overflow: hidden;
+}
+
+#content .content_area .content_middel li{
+    text-align: center;
+    position: relative;
+}
+
+
+#content .content_area .content_middel dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    font-weight: 700;
+    margin:100px 0 30px 0;
+}
+#content .content_area .content_middel li span{
+    display: block;
+    color:#fff;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top:30px;
+    margin-left: -50px;
+    font-size: 50px;
+}
+
+#content .content_area .content_middel dl{
+    width: 90%;
+    color:#fff;
+    border:1px solid rgba(37,90,166,0);
+    margin:0 5%;
+}
+#content .content_area .content_middel li:nth-of-type(1) dl{
+    background:rgba(37,90,166,0.4);
+}
+#content .content_area .content_middel li:nth-of-type(2) dl{
+    background:rgba(37,90,166,0.6);
+}
+#content .content_area .content_middel li:nth-of-type(3) dl{
+    background:rgba(37,90,166,0.7);
+}
+
+#content .content_area .content_middel dd{
+    margin-bottom:30px;
+}
+
+
+
+/* 스토리웨이 특징 영역 */
+#content .content_area .content_bottom{
+    margin-bottom:50px;
+}
+#content .content_area .content_bottom img{
+    width: 30px;
+    margin:0 15px;
+    float: left;
+    
+}
+#content .content_area .content_bottom h3{
+    font-size: 1.714285em;
+    margin-bottom:30px;
+    float: left;
+}
+#content .content_area .content_bottom dl{
+    clear: both;
+}
+#content .content_area .content_bottom dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    margin-left:5%;
+    margin-bottom:20px;
+    position: relative;
+}
+#content .content_area .content_bottom dt::after{
+    content:'';
+    width: 3px;
+    height: 15px;
+    background-color: #ea5b0c;
+    left:-7px;
+    top: 2px;
+    position: absolute;
+}
+#content .content_area .content_bottom dd{
+    line-height: 1.5em;
+    margin-bottom:30px;
+    margin-left:5%;
+}
+#content .content_area .content_bottom dd:last-child{
+    margin-bottom:0;
+}

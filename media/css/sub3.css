@@ -1,0 +1,259 @@
+
+/* 와이드 pc */
+.main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10em;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -253px;
+    
+    /* text-shadow: 5px 3px 0px rgba(255,255,255,1); */
+    letter-spacing: .2rem;  background: linear-gradient(to right bottom, #f00, #00f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.videoBox img:nth-of-type(2){
+    display: none;
+}
+#content .movie{
+    margin: 120px 0;
+    background: rgba(0,0,0,.9);
+    overflow: hidden;
+}
+#content .movie span{
+    color:red;
+}
+#content .movie .inner{
+    padding:0 2%;
+}
+#content .movie .movie1{
+    margin-top: 120px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+#content .movie .movie1 li{
+    float: left;
+    width: 49%;
+    padding-bottom: 50px;
+    transition: .5s;
+}
+#content .movie .movie1 li:first-of-type{
+    margin-right: 2%;
+}
+#content .movie a{
+    display: block;
+    margin-bottom: 45px;
+}
+#content .movie .movie1 li img{
+    width: 100%;
+    border-radius: 20px;
+    transition:all .5s ease-in-out;
+}
+#content .movie .movie1 li a{
+    position: relative;
+}
+#content .movie .movie1 li a:hover img{
+    filter: grayscale(1);
+}
+#content .movie .movie1 li span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    transition:all .5s ease-in-out;
+}
+#content .movie .movie1 li span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 13px solid transparent;
+    top: 18px;
+    left: 28px;
+    transition:all .5s ease-in-out;
+}
+#content .movie .movie1 li a:hover span::after{
+    border-left: 20px solid #000;
+    opacity: 1;
+}
+#content .movie .movie1 dl{
+    color:#fff;
+}
+#content .movie .movie1 dt{
+    font-size: 2em;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+#content .movie .movie1 dd{
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+#content .movie .movie2{
+    overflow: hidden;
+    margin-bottom:30px;
+}
+#content .movie .movie2 li{
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    transition: .5s;
+}
+#content .movie .movie2 li:last-of-type{
+    margin-right: 0;
+}
+#content .movie .movie2 li img{
+    width: 100%;
+    border-radius: 20px;
+    transition:all .5s ease-in-out;
+}
+#content .movie .movie2 li a{
+    position: relative;
+}
+#content .movie .movie2 li a:hover img{
+    filter: grayscale(1);
+}
+#content .movie .movie2 li span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -35px;
+    transition: all .5s ease-in-out;
+}
+#content .movie .movie2 li span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 13px solid transparent;
+    top: 18px;
+    left: 28px;
+    transition:all .5s ease-in-out;
+}
+#content .movie .movie2 li a:hover span::after{
+    border-left: 20px solid #000;
+    opacity: 1;
+}
+#content .movie .movie2 a{
+    margin-bottom: 35px;
+}
+#content .movie .movie2 p{
+    font-size: 1.125em;
+    color:#fff;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px){
+    
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px){
+    .main{
+        font-size: 9em;
+        margin-left: -238px;
+    }
+    #content .movie{
+        margin-top: 100px;
+    }
+    #content .movie a{
+        margin-bottom: 35px;
+    }
+    #content .movie .movie1{
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    #content .movie .movie1 li{
+        padding-bottom: 30px;
+    }
+    #content .movie .movie1 dt{
+        font-size: 1.75em;
+    }
+    #content .movie .movie1 dd{
+        font-size: 1em;
+    }
+
+    #content .movie .movie2 li{
+        width: 49%;
+        margin-bottom:30px;
+    }
+    #content .movie .movie2 li:nth-of-type(2){
+        margin-right: 0;
+    }
+    #content .movie .movie2 a{
+        margin-bottom: 30px;
+    }
+    #content .movie .movie2 p{
+        font-size: 1em;
+    }
+}
+/* 소형 테블릿 */
+@media screen and (max-width:768px){
+    .videoBox img:nth-of-type(1){
+        display: none;
+    }
+    .videoBox img:nth-of-type(2){
+        display: block;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:640px){
+    .main{
+        font-size: 7em;
+        margin-left: -180px;
+    }
+    #content .movie{
+        margin-top: 80px;
+    }
+    #content .movie a{
+        margin-bottom: 25px;
+    }
+    #content .movie .movie1{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    #content .movie .movie1 li{
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom:10px;
+    }
+    #content .movie .movie1 dt{
+        font-size: 1.5em;
+    }
+    #content .movie .movie1 dd{
+        font-size: 0.875em;
+    }
+
+    #content .movie .movie2{
+        margin-bottom: 20px;
+    }
+    #content .movie .movie2 li{
+        width: 100%;
+        margin-bottom:20px;
+    }
+    #content .movie .movie2 li:nth-of-type(2){
+        margin-right: 0;
+    }
+    #content .movie .movie2 a{
+        margin-bottom: 20px;
+    }
+    #content .movie .movie2 p{
+        font-size: 0.875em;
+    }
+}
+@media screen and (min-width:320px) {
+
+}

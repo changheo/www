@@ -1,0 +1,112 @@
+/* 공통태그 */
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* 카페 트리핀 */
+
+
+#content .content_area h3{
+    font-size: 1.714285em;
+    margin-bottom:30px;
+}
+#content .content_area .tripin_top{
+    text-transform: uppercase;
+    margin-bottom:70px;
+}
+#content .content_area .tripin_top img{
+    width: 100%;
+    position: relative;
+}
+
+#content .content_area .tripin_top h3{
+    margin-left:20px;
+    margin-bottom:50px;
+}
+#content .content_area .tripin_top ul{
+
+}
+#content .content_area .tripin_top li{
+    text-align: center;
+    margin:0 auto 30px;
+    width: 80%;
+    line-height: 1.5em;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 5px 2px #ccc;
+}
+#content .content_area .tripin_top li:nth-child(1){
+    transform: rotateZ(5deg);
+}
+#content .content_area .tripin_top li:nth-child(2){
+    transform: rotateZ(-5deg);
+}
+#content .content_area .tripin_top li:nth-child(3){
+    transform: rotateZ(5deg);
+}
+#content .content_area .tripin_top dl{
+    color:#fff;
+    position: absolute;
+    left:0;
+    top:40%;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    overflow: hidden;
+}
+
+#content .content_area .tripin_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.14286em;
+    margin:5%;
+}
+
+#content .content_area .tripin_top dd{
+    width: 90%;
+    margin:5%;
+}
+
+
+/* 트리핀 바텀 */
+
+#content .content_area .tripin_bottom{
+    margin-bottom:50px;
+    text-transform: capitalize;
+}
+
+#content .content_area .tripin_bottom ul{
+
+}
+#content .content_area .tripin_bottom li{
+    clear: both;
+    position: relative;
+    margin-bottom:70px;
+
+}
+#content .content_area .tripin_bottom li p{
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+}
+#content .content_area .tripin_bottom li img{
+    width: 90%;
+    margin:0 5% 30px;
+    box-shadow:2px 2px 5px 2px #ccc;
+    transform: rotateZ(-5deg);
+}
+#content .content_area .tripin_bottom li h3{
+    text-align: center;
+}
+
+
+#content .content_area .tripin_bottom li .tripin_inner{
+    transform: rotateZ(3deg);
+    box-shadow: 2px 2px 5px 2px #ccc;
+    background: #f2f2f2;
+    width: 90%;
+    margin: 0 3%;
+    padding:2%;
+}

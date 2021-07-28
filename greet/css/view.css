@@ -1,0 +1,59 @@
+#content .content_area {
+   width: 1200px;
+   font-family: 'Nanum Gothic', sans-serif;
+   margin-bottom: 150px;
+   color: #333;
+   margin: 0 auto;
+}
+
+.content_area #view_title {
+   font-size: 15px;
+}
+
+.content_area #view_title #view_title1 {
+   overflow: hidden;
+   border-top: 3px solid #000;
+   padding: 20px;
+   background: #255aa6;
+   color:#fff;
+   border-bottom: 1px solid #000;
+   font-weight: 700;
+}
+
+.content_area #view_title #view_title2 {
+   padding: 20px;
+   border-bottom: 1px solid #ccc;
+   overflow: hidden;
+}
+
+.content_area #view_content {
+   padding: 50px 20px;
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 40px;
+   font-size: 14px;
+   line-height: 2em;
+   text-align: justify;
+}
+
+#view_button {
+   overflow: hidden;
+   margin-bottom: 150px;
+}
+
+#view_button a {
+   display: block;
+   float: right;
+   background: #255aa6;
+   border-radius: 5px;
+   color: #fff;
+   text-align: center;
+   font-size: 15px;
+   padding: 5px 10px;
+   margin-left: 10px;
+}
+
+
+.nick2{
+   font-weight: 700;
+   margin-right:870px;
+}

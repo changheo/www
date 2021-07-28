@@ -1,0 +1,196 @@
+/* 카페 스토리웨이 영역 */
+
+/* 스크롤 이벤트 */
+#content .promotion dd:nth-child(odd){
+    position: relative;
+    right: 20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+#content .promotion dd:nth-child(even){
+    position: relative;
+    right: -20px;
+    top: 0;
+    opacity: 0;
+    transition: all .8s
+}
+
+#content .promotion dd.boxMove {
+    right: 0;
+    opacity: 1;
+}
+/* 스크롤 끝 */
+
+#content .content_area h3{
+    font-size: 2.5em;
+    margin: 0 0 80px 20px;
+}
+
+#content .content_area .promotion{
+    margin-bottom:150px;
+}
+#content .content_area .promotion table{
+    width: 100%;
+    border-top:2px solid #ccc;
+    border-bottom:1px solid #ccc;
+    line-height: 2em;
+    margin-bottom:100px;
+}
+#content .content_area .promotion thead{
+    background: #f2f2f2;
+}
+#content .content_area .promotion th{
+    background: #f2f2f2;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25em;
+    padding:20px 50px;
+}
+#content .content_area .promotion th:nth-child(1){
+    width: 25%;
+}
+#content .content_area .promotion th:nth-child(2){
+    width: 40%;
+}
+#content .content_area .promotion th:nth-child(3){
+    width: 35%;
+}
+
+#content .content_area .promotion thead th:last-of-type{
+    border-right:0;
+}
+#content .content_area .promotion tbody td:last-of-type{
+    border:1px solid #ccc;
+    border-right:0;
+    
+}
+#content .content_area .promotion td{
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    color: #333;
+    margin-top: 20px;
+    border-collapse: collapse;
+    padding:30px 30px;
+}
+
+#content .content_area .promotion img{
+    width: 220px;
+    height: 200px;
+    box-shadow: 5px 5px 7px 2px #ccc;
+    padding:15px 15px 60px 15px;
+}
+
+
+#content .content_area .promotion h4{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.875em;
+    text-align: center;
+    margin-bottom:100px;
+    position: relative;
+}
+
+#content .content_area .promotion dl{
+    overflow: hidden;
+    margin-bottom:100px;
+}
+#content .content_area .promotion dt{
+    clear: both;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    color: #255aa6;
+    margin-bottom:100px;
+    position: relative;
+}
+#content .content_area .promotion dt::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left:50%;
+    margin-left : -40px;
+    top:40px;
+}
+#content .content_area .promotion dd{
+    float: left;
+    margin:25px 25px 100px 25px;
+    position: relative;
+}
+#content .content_area .promotion span{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+#content .content_area .promotion dd:nth-child(odd){
+    transform: rotate(-5deg);
+}
+#content .content_area .promotion dd:nth-child(even){
+    transform: rotate(5deg);
+}
+#content .content_area .promotion dd::after{
+    content: '';
+    display: block;
+    width: 88px;
+    height: 24px;
+    position: absolute;
+    background: url(../images/content4/tape.png);
+    left:50%;
+    margin-left:-50px;
+    top:-13px;
+    opacity: .9;
+}
+
+
+#content .content_area .ktx table{
+    width: 100%;
+    border-top:2px solid #ccc;
+    border-bottom:1px solid #ccc;
+    line-height: 2em;
+    margin-bottom:200px;
+}
+#content .content_area .ktx thead{
+    background: #f2f2f2;
+}
+#content .content_area .ktx th{
+    background: #f2f2f2;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25em;
+    padding:20px 50px;
+}
+#content .content_area .ktx th:nth-child(1){
+    width: 20%;
+}
+#content .content_area .ktx th:nth-child(2){
+    width: 20%;
+}
+#content .content_area .ktx th:nth-child(3){
+    width: 20%;
+}
+#content .content_area .ktx th:nth-child(4){
+    width: 20%;
+}
+#content .content_area .ktx th:nth-child(5){
+    width: 20%;
+}
+
+#content .content_area .ktx thead th:last-of-type{
+    border-right:0;
+}
+#content .content_area .ktx tbody td:last-of-type{
+    border: 1px solid #ccc;
+    border-right:0;
+    
+}
+#content .content_area .ktx td{
+    text-align: center;
+}

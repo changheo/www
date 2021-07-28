@@ -1,0 +1,207 @@
+/* 동반성장 영역 */
+@keyframes textani {
+    from {
+        transform: translate(0, 300px);
+        opacity:.4;
+    }
+    30%{
+        opacity:1;
+    }
+    to {
+        transform: translate(0, -300px);
+        opacity:.4;
+    }
+}
+
+#content .content_area h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 100px;
+
+    position: relative;
+}
+
+#content .content_area h3::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgba(19, 101, 187, .5);
+    border-radius: 5px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 410px;
+    top: 15px;
+}
+#content .content_area h3::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgba(19, 101, 187, .5);
+    border-radius: 5px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 765px;
+    top: 15px;
+}
+
+#content .content_area .slogan {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+#content .content_area .slogan img {
+    margin-bottom: 150px;
+}
+
+#content .content_area .slogan .point_color {
+    color: #255aa6;
+}
+
+#content .content_area .slogan dl {
+    width: 700px;
+    background: rgba(242, 242, 242, .8);
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    margin-left: -400px;
+    top: 530px;
+    padding: 50px;
+}
+
+#content .content_area .slogan dt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+
+    margin-bottom: 70px;
+}
+
+#content .content_area .slogan dd {
+    width: 700px;
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+
+#content .content_area .strategy {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+#content .content_area .strategy ul {
+    overflow: hidden;
+    margin-bottom: 130px;
+    position: relative;
+}
+
+#content .content_area .strategy ul:nth-child(2)::after {
+    content: '';
+    width: 800px;
+    height: 3px;
+    border-top: 3px dotted rgba(19, 101, 187, .5);
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    z-index: -1;
+
+}
+
+#content .content_area .strategy ul:nth-child(2) li {
+    width: 350px;
+    border: 3px solid rgba(19, 101, 187, .5);
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+    margin-left: 18px;
+    margin-right: 30px;
+    transition: all .5s ease;
+}
+#content .content_area .strategy ul:nth-child(2) li:hover dt{
+    background: rgba(19, 101, 187, .8);
+}
+#content .content_area .strategy ul:nth-child(2) li:hover{
+    border: 3px solid rgba(19, 101, 187, .8);
+}
+
+#content .content_area .strategy ul:nth-of-type(odd) li:last-child {
+    margin-right: 0;
+}
+
+#content .content_area .strategy ul:nth-of-type(odd) dl {
+    height: 220px;
+    background: #fff;
+    text-align: center;
+}
+
+#content .content_area .strategy ul:nth-of-type(odd) dt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(19, 101, 187, .5);
+    padding:25px;
+    margin-bottom: 25px;
+    transition: all .5s ease;
+
+}
+
+#content .content_area .strategy ul:nth-of-type(odd) dd {
+    font-size: 1.125em;
+    line-height: 2em;
+}
+
+
+
+#content .content_area .strategy ul:nth-child(3) {
+    padding-top: 50px;
+    position: relative;
+
+}
+
+#content .content_area .strategy ul:nth-child(3)::after {
+    content: '';
+    width: 1200px;
+    height: 390px;
+    background: url(../images/content3/together2.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
+
+#content .content_area .strategy ul:nth-child(3) li {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 2em;
+    float: left;
+    margin-right: 40px;
+    padding-top: 90px;
+    position: relative;
+
+
+
+    animation: textani 15s linear infinite;
+}
+
+#content .content_area .strategy ul:nth-child(3) li:nth-of-type(1) {
+    margin-left: 40px;
+
+}
+
+#content .content_area .strategy ul:nth-child(3) li::before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255, 1);
+    border: 5px solid rgba(19, 101, 187, .5);
+    border-radius: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    z-index: -1;
+
+}

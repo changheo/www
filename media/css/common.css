@@ -1,0 +1,331 @@
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+body {font-family:'Montserrat', sans-serif; font-size:16px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display:block; position: absolute; left:-1000%; top:0;width: 1px; height: 1px; overflow: hidden; color:#fff;}
+
+/* 헤드라인 폰트연결 */
+
+
+/* 공통영역 */
+.videoBox {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute
+ }
+ 
+ #videoBG {
+    position: fixed;
+    /*고정=>fixed/ 스크롤처리=>absolute */
+    left: 50%;
+    top: 50%;
+    /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+    width: auto;
+    min-width: 100%;
+    /*동영상 너비를 꽉차게*/
+    height: auto;
+    min-height: 100%;
+    /*동영상 높이를 꽉차게*/
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    /*다른요소보다 아래에 위치*/
+ 
+ }
+ 
+ #imgBG {
+    position: fixed;
+    /*고정=>fixed/ 스크롤처리=>absolute */
+    left: 50%;
+    top: 50%;
+    /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+    width: auto;
+    min-width: 100%;
+    /*동영상 너비를 꽉차게*/
+    height: auto;
+    min-height: 100%;
+    /*동영상 높이를 꽉차게*/
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+ }
+ 
+ .down {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -63px;
+    bottom: 10%;
+    animation: ani 1s infinite alternate;
+ }
+ 
+ .down span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/aven.png) center no-repeat;
+    /* margin-left: px; */
+    margin:10px auto 0;
+    background-size: contain;
+    overflow: hidden;
+ }
+ 
+ @keyframes ani {
+    0% {
+       transform: scale(1);
+       opacity: 1;
+       color: #fff;
+    }
+ 
+    100% {
+       transform: scale(1.2);
+       opacity: 0.8;
+       color: #888;
+    }
+ }
+/* 네비 */
+.menuOpen div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.menuOpen{
+    display: none;
+}
+
+/* 헤더 공통 영역 */
+#wrap{width: 100%; overflow: hidden}
+
+#headerArea{position:fixed; z-index: 30; height: 95px;
+    background: rgba(0,0,0,.8); left:0; top: 0;
+    width: 100%}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%;
+     overflow: hidden}
+#headerArea h1{display: block;  background: url(../images/logo.png) center center no-repeat; float: left; margin-top: 12px; }
+#headerArea h1 a{display: block; width: 177px; height: 70px; color: #fff; text-decoration: none; text-indent: -9999px; overflow: hidden;}	
+#headerArea #gnb{float: right;margin-top: 35px;}
+#headerArea #gnb ul{}
+#headerArea #gnb ul li{float: left; margin-right: 40px;}
+#headerArea #gnb ul li h3{font-size: 1.5em; font-weight: 700;letter-spacing:1px;}
+#headerArea #gnb ul li a{ color: #fff; text-decoration: none}
+
+#headerArea #gnb ul li a:hover{animation: shine .5s ease-out infinite; transition:all .5s ease-out;color: #3b1c56;text-shadow: 0.7rem 0.7rem 1rem #ff6600, -0.5rem 0.5rem 1rem #ff6600,0.5rem -0.5rem 1rem #ff6600, -0.5rem -0.5rem 1rem #ff6600}
+@keyframes shine{to{opacity: 1;} 50%{opacity: .7;} from{opacity: 1;}}
+
+/* 푸터 공통 영역 */
+#footerArea{
+    width: 100%;
+    height: 141px;
+    background: #181818;
+    text-align: center;
+    color:#fff;
+    padding: 20px 0 0;
+    
+    position: relative;
+}
+#footerArea span{
+    color:#333;
+    font-weight: 700;
+    display: block;
+    width: 80px;
+    height: 50px;
+    padding-top:30px;
+    background: url(../images/top.png) center no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top:-80px;
+    right: 7%;
+}
+#footerArea ul{
+    overflow: hidden;
+}
+#footerArea ul li{
+    width: 25%;
+    float: left;
+}
+#footerArea ul li:nth-of-type(2){
+    width: 50%;
+}
+#footerArea ul li:nth-of-type(3){
+    width: 25%;
+    float: right;
+}
+#footerArea ul li a{
+    display: block;
+    width: 177px;
+    height: 70px;
+    text-indent: -9999px;
+    margin: 20px auto 0;
+}
+#footerArea ul li:nth-of-type(1) a{
+    background:url(../images/logo.png) center center no-repeat;
+    background-size: contain;
+}
+#footerArea ul li:nth-of-type(3) a{
+    background:url(../images/marvel_logo.png) center center no-repeat;
+    background-size: contain;
+}
+#footerArea ul li p{
+    font-size: 1.125em;
+    margin-bottom:10px;
+}
+#footerArea ul li p:nth-of-type(1){
+    margin-top:10px;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    .menuOpen{
+        display:block;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        transition: all 0.7s ease;
+        width:0;
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    
+    #headerArea .menuOpen{
+        display: block;
+    }
+
+    .mainMenu{
+        position: fixed;
+        background: rgba(0,0,0,.8);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        transition: all .6s ease-out;
+        pointer-events: none;
+    }
+    .mainMenu.open{
+        clip-path: circle(1000px at 90% 50%);
+        pointer-events: all;
+    }
+
+    #headerArea{height: 80px;}	
+    #headerArea	.headerInner{width: 100%; margin: 0;}
+	#headerArea h1{width: 157px; height: 50px; background-size: contain; margin-top:15px;}
+    #headerArea #gnb{width: 100%; margin-top: 15px}
+    #headerArea #gnb ul li{float: none; margin: 0 auto; text-align: center; margin: 30px 0;}
+    #headerArea #gnb ul li h3{font-size: 1.375em;}
+
+    #footerArea{
+        height: 161px;
+    }
+    #footerArea span{
+        color:red;
+        width: 60px;
+        height: 40px;
+        padding-top:20px;
+        top:-60px;
+        right:9%;
+    }
+    #footerArea ul li a{
+        margin: 40px auto 0;
+    }
+    #footerArea ul li:nth-of-type(1) a{
+        width: 157px;
+        height: 50px;
+        background:url(../images/logo.png) center center no-repeat;
+        background-size: contain;
+    }
+    #footerArea ul li:nth-of-type(3) a{
+        width: 157px;
+        height: 50px;
+        background:url(../images/marvel_logo.png) center center no-repeat;
+        background-size: contain;
+    }
+    #footerArea ul li p{
+        font-size: 1em;
+        margin-bottom:10px;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    
+}
+
+/* 모바일 */
+
+
+@media screen and (max-width:640px) {
+    .menuOpen {
+        top: 25px;
+    }
+    #headerArea #gnb .mainMenu{
+        top:60px;
+    } 
+	#headerArea{height: 60px;}	
+	#headerArea h1{width: 97px; height: 30px; background-size: contain; margin-top:15px;}
+    
+    #footerArea{
+        height: 161px;
+    }
+    #footerArea span{
+        color:#333;
+        width: 50px;
+        height: 35px;
+        padding-top:15px;
+        top:-50px;
+        right:8%;
+    }
+    #footerArea ul li a{
+        margin: 40px auto 0;
+    }
+    #footerArea ul li:nth-of-type(1) a{
+        width: 97px;
+        height: 30px;
+    }
+    #footerArea ul li:nth-of-type(3) a{
+        width: 97px;
+        height: 30px;
+    }
+    #footerArea ul li p{
+        font-size: 0.875em;
+    }
+    #footerArea ul li p:nth-of-type(1){
+        margin-top:5px;
+    }
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

@@ -1,0 +1,193 @@
+/* 공통태그 */
+
+
+/* 오시는길 영역 */
+
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#content .content_area{
+
+}
+
+#content .content_area #map{
+    position: relative;
+    width: 90%;
+    height: 300px;
+    border:1px solid #ccc;
+    margin:0 5%;
+    margin-bottom:50px;
+}
+
+
+#content .content_area p{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    margin-bottom:50px;
+}
+#content .content_area h3{
+    font-size: 1.714285em;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+/* 코레일유통 본사 영역 */
+#content .content_area .korail{
+    font-family: 'Nanum Gothic', sans-serif;
+    border:1px solid #ccc;
+    width: 86%;
+    margin: 0 5%;
+    margin-bottom:50px;
+    padding:2%;
+}
+
+#content .content_area .korail dl{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+#content .content_area .korail dl:last-of-type{
+    margin-bottom:0;
+}
+#content .content_area .korail dt{
+    width: 40%;
+    float: left;
+    font-weight: 700;
+    font-size: 1.14286em;
+    text-align: left;
+}
+#content .content_area .korail dt::after{
+    content:'';
+    width: 1px;
+    height: 20px;
+    background:#ccc;
+    left:20%;
+    margin-left:45px;
+    top:0;
+    position: absolute;
+}
+#content .content_area .korail dd{
+    width: 60%;
+    float: left;
+    font-weight: 400;
+    text-align: justify;
+
+}
+/* 대중교통 영역 */
+#content .content_area .transport{
+    overflow: hidden;
+    width: 90%;
+    margin:0 5%;
+    margin-bottom:50px;
+    position: relative;
+}
+#content .content_area .transport::after{
+    content:'';
+    width: 1px;
+    height: 100px;
+    background: #ccc;
+    left:51%;
+    top:5px;
+    position: absolute;
+}
+#content .content_area .transport dl{
+    text-align: center;
+    float: left;
+    width: 50%;
+    /* padding:0 100px 50px 100px; */
+    /* margin-right:60px; */
+}
+#content .content_area .transport dl:last-of-type{
+    margin-right:0;
+    /* margin-left: 5%; */
+}
+#content .content_area .transport dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    font-weight: 700;
+    margin-bottom:20px;
+    /* margin:0 50px 50px 50px; */
+}
+#content .content_area .transport dd{
+    width: 80%;
+    margin:0 auto;
+    line-height: 1.5em;
+    /* margin:20px; */
+}
+#content .content_area .transport .point{
+    color:#255aa6;
+}
+#content .content_area .transport .blue{
+    color:#fff;
+    position: relative;
+}
+#content .content_area .transport .blue::after{
+    content: '';
+    width:35px;
+    height: 20px;
+    left:-4px;
+    top:-3px;
+    background: rgb(36,0,255);
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
+#content .content_area .transport .green{
+    color:#fff;
+    position: relative;
+}
+#content .content_area .transport .green::after{
+    content: '';
+    width:35px;
+    height: 20px;
+    left:-4px;
+    top:-3px;
+    background: rgb(0,182,21);
+    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* 본부 주소 영역 */
+#content .content_area .Headquarters{
+    margin-bottom:50px;
+}
+#content .content_area .Headquarters table{
+    width: 100%;
+    border-top:2px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-collapse: collapse;
+}
+#content .content_area .Headquarters thead{
+    background: #f2f2f2;
+}
+#content .content_area .Headquarters th{
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.14286em;
+    padding:10px 15px;
+}
+#content .content_area .Headquarters th:nth-child(1){
+    width: 30%;
+}
+#content .content_area .Headquarters th:nth-child(2){
+    width: 70%;
+}
+
+#content .content_area .Headquarters thead th:last-of-type{
+    border-right:0;
+}
+#content .content_area .Headquarters td{
+    border-bottom:1px solid #ccc;
+    color: #333;
+    margin-top: 20px;
+    border-collapse: collapse;
+    padding:10px 20px;
+}

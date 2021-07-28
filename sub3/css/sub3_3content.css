@@ -1,0 +1,154 @@
+/* 청년창업지원사업 */
+
+@keyframes ani{
+	from{
+        opacity: 0;
+	}
+    25%{
+        opacity: 0;
+    }
+	50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+	to{
+        opacity: 0;
+	}
+    
+}
+@keyframes ani2{
+	from{
+        opacity: 1;
+	}
+    25%{
+        opacity: .8;
+    }
+	50%{
+        opacity: .6;
+    }
+    75%{
+        opacity: .4;
+    }
+	to{
+        opacity: .2;
+	}
+    
+}
+
+
+
+#content .content_area{
+    position: relative;
+}
+#content .content_area p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#content .content_area p:nth-child(1){
+    position: absolute;
+    left:50%;
+    margin-left:-97px;
+    top:-60px;
+    opacity: 0;
+
+    animation-name:ani;
+	animation-duration:9s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+#content .content_area p:nth-child(2){
+    position: absolute;
+    left:50%;
+    margin-left:-260px;
+    top:-60px;
+    opacity: 0;
+
+    animation-name:ani;
+	animation-duration:9s;
+    animation-delay: 3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+#content .content_area p:nth-child(3){
+    position: absolute;
+    left:50%;
+    margin-left:-243px;
+    top:-60px;
+    opacity: 0;
+    
+
+    animation-name:ani;
+	animation-duration:9s;
+    animation-delay: 6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+#content .content_area img{
+    margin-top:50px;
+}
+
+
+#content .content_area .support{
+    overflow: hidden;
+    margin-top:150px;
+}
+#content .content_area dl{
+    overflow: hidden;
+    margin-bottom:150px;
+    position: relative;
+    float: left;
+}
+#content .content_area .support div{
+    width: 650px;
+    height: 1150px;
+    overflow: hidden;
+    background:url(../images/content3/road.jpg) 880px -150px no-repeat;
+    background-attachment: fixed;
+    float: right;
+}
+#content .content_area dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin:50px 0 30px 50px;
+    position: relative;
+}
+#content .content_area dt::after{
+    content: '';
+    width: 23px;
+    height: 28px;
+    background: url(../images/content3/lightbulb.svg);
+    background-size:contain;
+    border-radius: 50%;
+    position: absolute;
+    left:-30px;
+    top:-3px;
+
+}
+#content .content_area dt::before{
+    content: '';
+    width: 42px;
+    height: 42px;
+    background: #fbfbdb;
+    border-radius: 50%;
+    position: absolute;
+    left:-40px;
+    top:-15px;
+
+    animation-name:ani;
+   animation-duration:1.5s;
+   animation-iteration-count:infinite;
+   animation-timing-function:ease-out;
+}
+
+#content .content_area dt:hover::after{
+    transform: scale(1.2);
+}
+#content .content_area dd{
+    text-align: justify;
+    line-height: 2em;
+    margin-left:50px;
+}

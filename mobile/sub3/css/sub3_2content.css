@@ -1,0 +1,96 @@
+/* 공통태그 */
+
+
+/* 소개 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+#content h2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #255aa6;
+    position: absolute;
+    left:50%;
+    margin-left:-40px;
+    bottom:-10px;
+}
+
+/* 고객의 소리 영역 */
+#content .content_area h3{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.714285em;
+    text-align: center;
+    margin-bottom:50px;
+}
+#content .content_area ol{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.14286em;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+#content .content_area ol li{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border: 30px solid rgba(37,90,166,1);
+    border-radius: 50%;
+    margin:0 auto;
+    padding-top:140px;
+    text-align: center;
+}
+#content .content_area ol li:nth-child(1){
+    border: 30px solid rgba(37,90,166,.2);
+}
+#content .content_area ol li:nth-child(2){
+    border: 30px solid rgba(37,90,166,.4);
+}
+#content .content_area ol li:nth-child(3){
+    border: 30px solid rgba(37,90,166,.6);
+}
+#content .content_area ol li img{
+    position: absolute;
+    left:50%;
+    margin-left:-33px;
+    top:40px;
+}
+#content .content_area ul{
+    margin-bottom:50px;
+    overflow: hidden;
+}
+#content .content_area ul li{
+    width: 90%;
+    margin:0 5% 50px;
+    overflow: hidden;
+}
+#content .content_area ul li div{
+    float: left;
+}
+#content .content_area ul li img{
+    padding:20px;
+}
+#content .content_area ul li dl{
+    margin-left:110px;
+}
+#content .content_area ul li dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.14286em;
+    margin-bottom:30px;
+}
+#content .content_area ul li dd{
+    line-height: 1.5em;
+}
+#content .content_area ul li dd a{
+    background: #f2f2f2;
+    width: 155px;
+    display: block;
+    padding:10px 10px;
+    margin-top:20px;
+}

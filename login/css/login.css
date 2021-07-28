@@ -1,0 +1,47 @@
+
+#content{font-family: 'Nanum Gothic', sans-serif; width: 600px; margin: 0 auto;}
+#content .login_top{overflow: hidden; padding-top: 30px}
+#content .logo{display: block; width: 179px; height: 70px; background: url(../../images/logo.jpg); text-indent: -999px; overflow: hidden; margin-top: -30px;     position: relative;
+    left: 50%;
+    top: 0;
+    margin: 30px 0 30px -89px;}
+#content h2{font-family: 'Nanum Gothic', sans-serif; font-size: 30px; text-align: center; color: #333; position: relative;}
+
+#login_form{
+    margin-top:50px;
+    border:1px solid #255aa6;
+    border-radius: 20px;
+    padding:20px;
+}
+.id_pw_input{width: 100%}
+
+.id_pw_input ul li{margin-bottom: 20px;}
+.id_pw_input ul li input{width: 550px; border-radius: 10px; border: none; background: #eaebef; padding: 5px; height: 40px; font-size: 16px}
+
+.login_button{ margin-bottom: 20px; overflow: hidden}
+.login_button ul{overflow: hidden; margin-bottom: 20px;}
+.login_button ul li{float: left;}
+.login_button ul li:nth-of-type(1) span{margin:0 10px;}
+.login_button ul li:nth-of-type(1){margin-left: 10px; margin-right: 250px;}
+.login_button ul li span:nth-of-type(1) a{margin-right: 12px;}
+.login_button ul li a:hover{
+    color:#255aa6;
+    text-decoration: underline;
+}
+.login_button input{cursor: pointer; background: #255aa6; color: #fff; padding: 5px; height: 50px; font-size: 16px; border: none; width: 270px; margin-right: 17px; float: left; border-radius: 10px;}
+.login_button input:hover{color: #255aa6; background: #fff; border: #004b84 solid 1px;}
+
+.login_button>a{display: inline-block; background: #bbb; color: #fff; padding: 14.5px 5px; font-size: 16px; border: none; width: 260px; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center; border-radius: 10px;}
+
+.join_button{overflow: hidden; position: relative;}
+
+.join_button span::before{width: 600px; height: 1px; content: ''; background: #ccc; position: absolute; top: 0; left: 0}
+.join_button span{color: #666; padding-top: 20px; display: block; ; font-size: 25px; font-weight: 700; margin-bottom: 10px}
+.join_button p{ font-weight: 400; color: #999; float: left; line-height: 1.5em; margin-left:10px;}
+
+
+.join_button a{float: left; display: block; background: #255aa6; color: #fff; padding: 14.5px 5px; font-size: 16px; border: none; width: 260px; float: right; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center; border-radius: 10px;}
+.join_button a:hover{color: #255aa6; background: #fff;border: #255aa6 solid 1px; padding: 13.5px 5px;}
+
+
+

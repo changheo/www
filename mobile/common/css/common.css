@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+/* 모바일 코딩 필수 공통영역 */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    color: #333;
+    font-size: 14px;
+    font-family: 돋움, Dotum;
+}
+
+img,
+fieldset {
+    border: 0;
+    vertical-align: top
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+hr {
+    display: none;
+}
+
+a {
+    color: inherit;
+}
+
+a,
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+em,
+i,
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+legend,
+caption {
+    display: none;
+    clear: both;
+}
+
+input,
+textarea,
+select,
+button,
+table {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+section,
+nav,
+article,
+aside,
+hgroup,
+header,
+footer {
+    display: block
+}
+
+textarea,
+input {
+    border-radius: 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.hidden,
+#skipNav {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff
+}
+
+/* 헤드라인 폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; font-weight:700 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+/* 전체 공통 */
+#wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 헤더영역 */
+#headerArea {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 50;
+    border-bottom: 1px solid #ccc;
+}
+
+#headerArea .header_top {
+    overflow: hidden;
+}
+
+#headerArea h1 {
+    float: left;
+    text-indent: -999px;
+}
+
+#headerArea h1 a {
+    display: block;
+    width: 150px;
+    height: 56px;
+    color: #fff;
+    background: url(../images/logox2.png) center no-repeat;
+    background-size: 150px 56px;
+    padding:20px;
+}
+
+#headerArea .menu_ham {
+    display: block;
+    float: right;
+    height: 96px;
+    position: relative;
+    border-radius: 5px;
+}
+
+#headerArea .menu_ham span {
+    width: 30px;
+    height: 6px;
+    background: #255aa6;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 40px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 6px;
+    background: #255aa6;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 6px;
+    background: #255aa6;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span,
+#headerArea.mn_open .menu_ham span::before,
+#headerArea.mn_open .menu_ham span::after {
+    background: #255aa6;
+    transition: all .3s;
+}
+
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0, 0, 0, 0);
+    transition: all .3s;
+}
+
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .3s;
+}
+
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s;
+}
+
+/* nav 영역*/
+#gnb {
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 95px;
+    background:#fff;
+    opacity: 0;
+    z-index: 20
+}
+#gnb>ul{
+    background: #255aa6;
+}
+
+#gnb>ul li {
+    border-top: 1px solid #FFF;
+    text-align: left;
+    text-indent: 20px;
+    font-weight: 700;
+    font-size: 1.57143em;
+}
+
+#gnb>ul li a {
+    color:#fff;
+    display: block;
+    padding: 15px 0
+}
+
+#gnb>ul li ul{
+    background: #729cd8;
+    display: none
+}
+#gnb>ul li ul li{
+    text-indent: 50px;
+    font-size: 0.81818em;
+}
+
+#gnb>ul .last {
+    border-bottom: 1px solid #FFF
+}
+
+
+#gnb .sns ul{
+    margin-top:100px;
+    overflow: hidden;
+}
+#gnb .sns ul li{
+    text-align: center;
+    width: 33.33%;
+    float: left;
+}
+#gnb .sns i{
+    color:#255aa6;
+}
+
+/* 푸터영역 */
+#footerArea{
+    color:#fff;
+    background: #2e2e2e;
+    padding-left: 5%;
+    line-height: 2em;
+    padding-bottom:20px;
+}
+#footerArea>span{
+    display: block;
+    width: 150px;
+    height: 56px;
+    color: #fff;
+    text-indent: -999px;
+    background: url(../images/footer_logox2.png) center no-repeat;
+    background-size: 150px 56px;
+    padding:20px;
+}
+#footerArea>ul{
+    overflow: hidden;
+}
+#footerArea>ul li{
+    float: left;
+    margin-right: 3%;
+}
+#footerArea>ul li:nth-child(1){
+    width: 40%;
+}
+#footerArea>ul li:nth-child(2){
+    width: 30%;
+}
+#footerArea>ul li:nth-child(3){
+    margin-right:0;
+    width: 24%;
+}
+#footerArea>ul li a{
+    padding:1%;
+    color: #fff;
+}
+#footerArea p{
+    margin-bottom:10px;
+}
+#footerArea .linksite{
+    width:200px;
+    background: #363636;
+    position: relative;
+
+}
+
+#footerArea .linksite a{
+    display: block;
+    width: 200px;
+    margin-left:15px;
+    color: #fff;
+}
+#footerArea .linksite span{
+    margin-left: 4%;
+}
+#footerArea .linksite .aList{
+    width: 200px;
+    position: absolute;
+    left:0;
+    top:-56px;
+    background: #363636;
+    display: none;
+}
+
+#footerArea .linksite .aList li a{
+    display: block;
+    width: 200px;
+    color: #fff;
+}
+
+/* 탑버튼 */
+.topMove {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: #255aa6;
+    border-radius: 30px;
+    position: fixed;
+    right: 30px;
+    bottom:50px;
+  
+    z-index: 10;
+  }
+  
+  .topMove i {
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 44px;
+  }

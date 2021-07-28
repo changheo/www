@@ -1,0 +1,174 @@
+
+
+.content_area #write_form{
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.content_area #write_form #write_row1{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.content_area #write_form #write_row1 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+
+.content_area #write_form #write_row1 .col2{
+    text-align: left;
+    padding:10px 0;
+    margin:10px 0;
+    width: 650px;
+    margin-left:50px;
+    float: left;
+}
+.content_area #write_form #write_row1 .col3{
+    margin:10px 0;
+    padding:10px 0;
+    width: 300px;
+    float: right;
+}
+.content_area #write_form #write_row2{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+.content_area #write_form #write_row2 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+
+.content_area #write_form #write_row2 .col2{
+    text-align: left;
+    margin:10px 0;
+
+    margin-left:50px;
+    float: left;
+}
+.content_area #write_form #write_row2 .col2 input{
+    width: 850px;
+    padding:10px 0;
+}
+
+.content_area #write_form #write_row3{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+.content_area #write_form #write_row3 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+
+.content_area #write_form #write_row3 .col2{
+    text-align: left;
+    margin:10px 0;
+
+    margin-left:50px;
+    float: left;
+}
+.content_area #write_form #write_row3 .col2 textarea{
+    width: 850px;
+    padding:10px 0;
+}
+.content_area #write_form #write_row4{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+.content_area #write_form #write_row4 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+.content_area #write_form #write_row4 .col2{
+    text-align: left;
+    margin:17px 0;
+
+    margin-left:50px;
+    float: left;
+}
+.content_area #write_form #write_row5{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+.content_area #write_form #write_row5 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+.content_area #write_form #write_row5 .col2{
+    text-align: left;
+    margin:17px 0;
+
+    margin-left:50px;
+    float: left;
+}
+.content_area #write_form #write_row6{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom:10px;
+}
+.content_area #write_form #write_row6 .col1{
+    color:#fff;
+    font-weight: 700;
+    margin:10px 0;
+    padding:10px 0;
+    width: 200px;
+    float: left;
+    background: #255aa6;
+}
+.content_area #write_form #write_row6 .col2{
+    text-align: left;
+    margin:17px 0;
+
+    margin-left:50px;
+    float: left;
+}
+
+.content_area #write_button{
+    overflow: hidden;
+    margin-bottom:150px;
+}
+
+.content_area #write_button a{
+    display: block;
+    text-align: center;
+    width: 50px;
+    color:#fff;
+    background: #255aa6;
+    border-radius: 5px;
+    margin-left:20px;
+    padding:5px 10px;
+    float: left;
+}
+.content_area #write_button a:nth-of-type(1){
+    margin-left:940px;
+}

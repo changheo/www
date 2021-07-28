@@ -1,0 +1,145 @@
+/* 공통태그 */
+
+
+/* 소개 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* 인재상 영역 */
+#content .content_area h3{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.714285em;
+    margin-left:30px;
+    margin-bottom:50px;
+}
+
+#content .content_area .con_top{
+    width: 100%;
+    margin-bottom:50px;
+}
+#content .content_area .con_top ul{
+    overflow: hidden;
+    margin:0 2%;
+}
+#content .content_area .con_top li{
+    width: 46%;
+    margin: 0 2% 30px;
+    float: left;
+}
+
+#content .content_area .con_top li img{
+    display: block;
+    width: 100%;
+    box-shadow: 5px 5px 7px 2px #ccc;
+    border-radius: 10%;
+    margin:0 auto 20px;
+}
+
+#content .content_area .con_top dl{
+    font-family: 'Nanum Gothic', sans-serif;
+    height: 120px;
+    text-align: center;
+}
+#content .content_area .con_top dt{
+    font-weight: 700;
+    margin-bottom:20px;
+}
+#content .content_area .con_top dd{
+    margin:0 auto;
+    line-height: 1.5em;
+}
+
+
+
+
+
+#content .content_area .con_bottom{
+    background: #f5f5f5;
+    padding-top:30px;
+    margin-bottom:50px;
+}
+#content .content_area .con_bottom ul{
+    width: 100%;
+    overflow: hidden;
+} 
+#content .content_area .con_bottom li{
+    width: 44%;
+    margin: 0 4% 30px;
+    float: left;
+    position: relative;
+}
+#content .content_area .con_bottom li:nth-child(odd){
+    margin:0 0 0 4%;
+}
+#content .content_area .con_bottom li img{
+    width: 100%;
+}
+#content .content_area .con_bottom li dl{
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 100%;
+    height: 170px;
+    background: #fff;
+    text-align: center;
+}
+#content .content_area .con_bottom li:nth-child(1) dl::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/mobile/sub4/images/content2/trophy.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:50%;
+    margin-left:-20px;
+    top:50%;
+    margin-top:-105px;
+}
+#content .content_area .con_bottom li:nth-child(2) dl::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/mobile/sub4/images/content2/home.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:50%;
+    margin-left:-20px;
+    top:50%;
+    margin-top:-105px;
+}
+#content .content_area .con_bottom li:nth-child(3) dl::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/mobile/sub4/images/content2/hand.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:50%;
+    margin-left:-20px;
+    top:50%;
+    margin-top:-105px;
+}
+#content .content_area .con_bottom li:nth-child(4) dl::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/mobile/sub4/images/content2/first-aid-kit.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:50%;
+    margin-left:-20px;
+    top:50%;
+    margin-top:-105px;
+}
+#content .content_area .con_bottom li dt{
+    font-weight: 700;
+    font-size: 1.14286em;
+    padding: 30px 0;
+}
+#content .content_area .con_bottom li dd{
+    line-height: 1.5em;
+    padding:0 10px 20px 10px;
+}

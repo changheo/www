@@ -1,0 +1,203 @@
+/* 매장운영절차 영역 */
+
+/* 탭메뉴 */
+#content .content_area .tab_menu ul{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-left:500px;
+    text-align: center;
+    font-size: 1.125em;
+    position: relative;
+    padding-bottom:100px;
+}
+
+#content .content_area .tab_menu ul::after{
+    content:'';
+    width: 2000px;
+    height: 1px;
+    background:#ccc;
+    position: absolute;
+    left: -900px;
+    top:-3px;
+}
+
+#content .content_area .tab_menu li{
+    float: left;
+    width: 230px;
+    position: relative;
+    left:-245px;
+}
+#content .content_area .tab_menu li a{
+    display: block;
+    color:#999;
+    padding:10px;
+    margin:0 30px;
+    transition: all .5s ease;
+}
+#content .content_area .tab_menu li:hover a{
+    color:#255aa6;
+}
+#content .content_area .tab_menu .current2 a{
+    color:#255aa6;
+}
+#content .content_area .tab_menu .current2 a::after{
+    content:'';
+    background: #255aa6;
+    border:1px solid #255aa6;
+}
+#content .content_area .tab_menu a::after{
+    content:'';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    position: absolute;
+    left:50%;
+    margin-left:-5px;
+    top:-9px;
+    z-index: 10;
+    transition: all .5s ease;
+}
+#content .content_area .tab_menu a:hover::after{
+    content: '';
+    background: #255aa6;
+    border:1px solid #255aa6;
+}
+
+
+#content .content_area h3{
+    font-size: 2.5em;
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom:170px;
+    clear:both;
+    position: relative;
+}
+#content .content_area h4{
+    font-size: 1.875em;
+    margin:0 0 50px 30px;
+    position: relative;
+}
+#content .content_area h4::after{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background: #ea5b0c;
+    position: absolute;
+    left:-30px;
+    top:50%;
+}
+}
+#content .content_area .con_top{
+    margin-bottom:150px;
+}
+#content .content_area .con_top ol{
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow: hidden;
+}
+#content .content_area .con_top li{
+    width: 250px;
+    height: 250px;
+    margin:25px;
+    background:linear-gradient(-45deg,#fff,#f2f2f2);
+    box-shadow: 5px 5px 7px 2px #ccc;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+#content .content_area .con_top li::before{
+    content: '';
+    background: url(../images/content1/arrow2.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:-40px;
+    top:110px;
+}
+#content .content_area .con_top li:last-child::before{
+    display: none;
+}
+#content .content_area .con_top:nth-last-child(2) li{
+    width: 250px;
+    height: 250px;
+    margin:25px 75px;
+    background:linear-gradient(-45deg,#fff,#f2f2f2);
+    border-radius: 50%;
+    float: left;
+}
+#content .content_area .con_top:nth-last-child(2) li::before{
+    content: '';
+    background: url(../images/content1/arrow2.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:-90px;
+    top:110px;
+}
+#content .content_area .con_top li span{
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#666;
+    font-size: 2.75em;
+    position: absolute;
+    left:0;
+    top:15px;
+}
+#content .content_area .con_top img{
+    margin-left:90px;
+    margin-top:40px;
+}
+#content .content_area .con_top p{
+    font-size: 1.125em;
+    margin-top:40px;
+    font-weight: 700;
+    text-align: center;
+}
+#content .content_area .con_top dl{
+    margin-top:70px;
+}
+#content .content_area .con_top dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin:50px 0 20px 20px;
+    position: relative;
+}
+#content .content_area .con_top dt::after{
+    content: '';
+    width: 2px;
+    height: 15px;
+    background: #255aa6;
+    left:-10px;
+    top:4px;
+    position: absolute;
+}
+#content .content_area .con_top dd{
+    margin-left:30px;
+    line-height: 2em;
+}
+
+#content .content_area .con_bottom{
+    margin-bottom:150px;
+}
+#content .content_area .con_bottom dl{
+    margin-top:100px;
+}
+#content .content_area .con_bottom dt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin:50px 0 20px 20px;
+    position: relative;
+}
+#content .content_area .con_bottom dt::after{
+    content: '';
+    width: 2px;
+    height: 15px;
+    background: #255aa6;
+    left:-10px;
+    top:4px;
+    position: absolute;
+}
+#content .content_area .con_bottom dd{
+    margin-left:30px;
+    line-height: 2em;
+}

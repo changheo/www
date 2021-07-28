@@ -1,0 +1,124 @@
+
+/* 와이드 pc */
+.main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10em;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -264px;
+    
+    /* text-shadow: 5px 3px 0px rgba(255,255,255,1); */
+    letter-spacing: .2rem;  background: linear-gradient(to right bottom, #f00, #00f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.videoBox img:nth-of-type(2){
+    display: none;
+}
+#content .gallery{
+    background: rgba(0,0,0,.9);
+    margin-bottom:120px;
+}
+#content .gallery img{
+    border-radius: 20px;
+}
+#content .gallery .inner{
+    overflow: hidden;
+    padding:0 2%;
+}
+
+/* masonry css s */
+.grid{
+    margin: 120px 0 0;
+}
+.grid-image-item,.grid--images .grid-sizer {
+    width: 25%;
+}
+.grid-image-item {
+  float: left; 
+   margin-bottom: 50px
+}
+.grid-image-item img{
+    display: block;
+    width: 94%;
+    margin: 0 auto 20px;
+}
+.grid-image-item h3{
+    display: block;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto 10px;
+    font-size: 1.875em;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+.grid-image-item ul{
+    width: 90%;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+.grid-image-item ul li{
+    border-radius: 5px;
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom:5px;
+    background: #8f11f0;
+    color: #fff;
+    padding: 3px 10px;
+    text-transform: capitalize;
+    transition: .3s
+}
+/* masonry css e */
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px){
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px){
+    .main{
+        font-size: 9em;
+        margin-left: -238px;
+    }
+    .grid{
+        margin: 100px 0 0;
+    }
+    .grid-image-item,.grid--images .grid-sizer{
+        width: 33.33%;
+    }
+    #content .gallery img{
+        border-radius: 15px
+    }
+}
+/* 소형 테블릿 */
+@media screen and (max-width:768px){
+    .videoBox img:nth-of-type(1){
+        display: none;
+    }
+    .videoBox img:nth-of-type(2){
+        display: block;
+    }
+    .grid-image-item,.grid--images .grid-sizer{
+        width: 50%;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:640px){
+    .main{
+        font-size: 7em;
+        margin-left: -188px;
+    }
+    .grid-image-item,.grid--images .grid-sizer{
+        width: 100%;
+    }
+}
+@media screen and (min-width:320px) {
+
+}

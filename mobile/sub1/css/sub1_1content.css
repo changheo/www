@@ -1,0 +1,160 @@
+/* 공통태그 */
+
+#content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+#content h3{
+    font-size: 1.57143em;
+    text-align: center;
+    margin-bottom: 50px;
+    clear: both;
+    position: relative;
+}
+#content h3::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #255aa6;
+    position: relative;
+    left: 50%;
+    top: 20px;
+}
+
+#content p {
+    text-align: justify;
+    line-height: 1.5em;
+    margin:0 10px 30px 10px;
+}
+#content p:first-of-type{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#content .point_text {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.14286em;
+    font-weight: 700;
+    color: #255aa6;
+}
+
+
+
+/* 인사말 영역 */
+#content .hello{
+    overflow: hidden;
+    margin-bottom:50px;
+}
+
+#content .hello img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#content .hello p:last-child {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.285715em;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#content .hello .first_text {
+    margin: 0 0 30px 10px;
+}
+
+
+
+
+
+/* 가치체계 영역 */
+#content .vision {
+    overflow: hidden;
+}
+
+#content .vision p {
+
+}
+
+#content .vision ul {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#content .vision ul::after {
+    content: '';
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+
+#content .vision li {
+    width: 50%;
+    height: 200px;
+    float: left;
+    background: #f9f9f9;
+}
+
+#content .vision dt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px 0 40px 0;
+}
+
+#content .vision dd {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+
+
+#content .task{
+    margin-bottom:50px;
+    overflow: hidden;
+}
+
+#content .task ul {
+    color:#fff;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+#content .task ul::after {
+    content: '';
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+
+#content .task li {
+    width: 50%;
+    padding-top:50px;
+    line-height: 1.5em;
+    height: 100px;
+    float: left;
+    background: #255aa6;
+}
+#content .task ul:nth-child(3) li:nth-last-of-type(1){
+    background: #00d2ff;
+}
+#content .task ul:nth-child(4) li:nth-last-of-type(2){
+    background: #00d2ff;
+}
+#content .task ul:nth-child(3){
+    margin-bottom:1px;
+}
